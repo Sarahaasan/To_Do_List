@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- for quotes  -->
+    <div class="quote text-center fs-1">
+    </div>
+    <!-- to do list  -->
+<div class="container-fluid p-0">
+<div class="row min-vh-100 g-0 flex-column flex-lg-row-reverse align-items-stretch">
+    <!-- Violet Section: for input section -->
+<section class=" violet col-lg-5 violet-section d-flex flex-column  align-items-center text-white text-center p-4">
+
+  <h1 class="mb-4">To-Do App 📝</h1>
+
+  <form class="w-100 d-flex flex-column align-items-center gap-2" id="task-form">
+    <input type="text" class="form-control w-75" placeholder="Write down your task" id="task-input" required autocomplete="off">
+    <button type="submit" class="btn btn-light text-dark px-4" id="Add-task">Add Task</button>
+  </form>
+</section>
+
+<!-- when there is No tasks  yet -->
+<section class="notask col-lg-7 d-flex flex-column justify-content-center align-items-center py-4">
+  <div class="fs-1 text-muted fw-semibold text-center">
+    Nothing here yet — let’s Start Your Journey ! 😊
+  </div>
+</section>
+
+
+    <!-- White Section: for tasks  -->
+    <section class=" white col-lg-7 white-section d-flex flex-column justify-content-start align-items-center p-4">
+
+      <h2 class="text-center fs-1 mb-4">Tasks</h2>
+      <div class="mb-4 text-center">
+        <button class="all  btn btn-outline-dark mx-1">All</button>
+        <button class=" activee btn btn-outline-success mx-1">Active</button>
+        <button class="completedd  btn btn-outline-primary mx-1">Completed</button>
+      </div>
+      <div class="content shadow-sm p-4 bg-white rounded w-100" style="max-width: 600px;">
+   <!-- Dynamic tasks -->
+   <ul class="list-group" id="task-list">
+
+  </ul>
+</div>
+ <button id="clear">Clear All Tasks</button>
+</section> 
+  </div>
+</div>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- js attachment -->
+   <script src="./main.js" defer></script>
+</body>
+</html>
