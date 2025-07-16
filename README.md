@@ -39,10 +39,12 @@
   </ul>
 
   </ol>
-  <h2>🔗 Live Demo</h2>
-  <p>Try the app here: 
-    <a href="https://vercel.com/sara-hassan-mahmouds-projects/to-do-list" target="_blank">
-      https://vercel.com/sara-hassan-mahmouds-projects/to-do-list
-    </a>
-  </p>
-  <p>Created with 💜 by Sara Hassan</p>
+<h2>🔗 Live Demo</h2>
+<p>
+  Try the app here: 
+  <a href="https://to-do-list-gamma-sandy.vercel.app/" target="_blank">
+    https://to-do-list-gamma-sandy.vercel.app/
+  </a>
+</p>
+<p><em>Designed and developed with 💜 by Sara Hassan</em></p>
+
